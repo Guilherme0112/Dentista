@@ -10,6 +10,10 @@
         width: 180px;
         height: 60px;
     }
+    .title-1{
+        padding: 0;
+        text-align: center;
+    }
 }
 @media (max-width: 600px){
     .div-btn{
@@ -20,5 +24,10 @@
     }
     .text-text{
         font-size: 2vw;
+    }
+}
+@media (max-width: 470px){
+    .link-header{
+        font-size: 12px;
     }
 }

@@ -12,4 +12,7 @@ class dentistaController extends Controller
     public function sobre(){
         return view('pages.sobre.sobre');
     }
+    public function planos(){
+        return view('pages.planos.planos');
+    }
 }
