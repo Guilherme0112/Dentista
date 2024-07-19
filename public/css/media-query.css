@@ -1,0 +1,24 @@
+@media (max-width: 768px){
+    .title-text{
+        font-size: 3.4vw;
+    }
+    .text-text{
+        margin: 0 !important;
+        font-size: 1.6vw;
+    }
+    .btn-back{
+        width: 180px;
+        height: 60px;
+    }
+}
+@media (max-width: 600px){
+    .div-btn{
+        display: none;
+    }
+    .title-text{
+        font-size: 4vw;
+    }
+    .text-text{
+        font-size: 2vw;
+    }
+}
