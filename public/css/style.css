@@ -1,0 +1,40 @@
+html{
+    max-width: 1500px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.link-header{
+
+    width: 150px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.link-header:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: white;
+}
+footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100px;
+    width: 100%;
+}
