@@ -1,10 +1,15 @@
+@import url('style.css');
 @media (max-width: 768px){
+    .background{
+        aspect-ratio: 16/9;
+    }
     .title-text{
         font-size: 3.4vw;
     }
     .text-text{
         margin: 0 !important;
         font-size: 1.6vw;
+        padding-left: 20px;
     }
     .btn-back{
         width: 180px;

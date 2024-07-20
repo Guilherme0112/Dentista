@@ -26,7 +26,7 @@
         </p>
     </div>
     <div class="div-btn">
-        <button class="btn btn-primary btn-back">Fazer meu plano</button>
+        <a href="{{ route('pages-planos') }}"class="btn btn-primary btn-back">Fazer meu plano</a>
     </div>
 </div>
 <div>
@@ -35,10 +35,16 @@
 <section class="ex-planos">
     <div class="box-planos">
         <div class="c-box-planos">
-            <img src="" alt="" class="img-planos">
+            <img src="../assets/img_1.png" alt="" class="img-planos">
             <span class="desc-planos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum, laborum assumenda, ad quod ipsum ullam modi amet reiciendis, autem ab id beatae necessitatibus earum quo! Incidunt quam non dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nostrum quis minima eius quia architecto, sequi assumenda iure ipsa velit, quae consectetur alias eos consequuntur itaque a neque ipsam delectus!</span>
             <button class="btn btn-back btn-primary">R$99,99/Mês</button>
         </div>
     </div>
+</section>
+<span class="line"></span>
+<div>
+    <h1 class="title-1">Marque sua <span class="title-2">consulta conosco</span></h1>
+</div>
+<section>
 </section>
 @endsection

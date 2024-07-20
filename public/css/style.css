@@ -51,12 +51,17 @@ header{
 }
 
 /* Primary part of page */
-
+.line{
+    display: flex;
+    width: 100%;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+}
 main{
     width: 100%;
 }
 .background{
-    aspect-ratio: 16/8;
+    aspect-ratio: 16/7;
     width: 100%;
     background: url("../assets/img_1.png");
     background-position: center;
@@ -71,7 +76,7 @@ main{
     margin-bottom: 20px;
 }
 .text, .div-btn{
-    width: 400px;
+    width: 350px;
 }
 .div-btn{
     text-align: center;
@@ -79,13 +84,12 @@ main{
 .title-text{
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 32px;
 }
 .text-text{
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     width: 100%;
-    padding: 0 50px;
 }
 .btn-back{
     width: 200px;
@@ -93,6 +97,9 @@ main{
     border-radius: 10px;
     font-size: 18px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Settings box plans */

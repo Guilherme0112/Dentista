@@ -10,9 +10,3 @@ main{
     display: flex;
     align-items: center;
 }
-.line{
-    display: flex;
-    width: 100%;
-    outline: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 5px 0;
-}

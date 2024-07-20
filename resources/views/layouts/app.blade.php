@@ -29,6 +29,7 @@
             <h5 class="title-footer">Suporte</h5>
             <a href="" class="link-footer">Fale Conosco</a>
             <a href="" class="link-footer">Reclame Aqui</a>
+            <a href="" class="link-footer">WhatsApp</a>
         </div>
     </footer>
 </body>
