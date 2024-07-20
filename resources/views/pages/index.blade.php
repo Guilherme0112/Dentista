@@ -45,6 +45,23 @@
 <div>
     <h1 class="title-1">Marque sua <span class="title-2">consulta conosco</span></h1>
 </div>
-<section>
+<section class="ex-planos">
+    <div class="calendar">
+        <div class="c-box-calendar">
+
+        </div>
+    </div>
+</section>
+<h1 class="title-1">Conheça <span class="title-2">nossos tratamentos</span></h1>
+<section class="ex-planos">
+    <div class="tratamentos">
+        <div class="c-tratamentos">
+            <img src="../assets/img_1.png" class="img-tratamentos">
+            <p class="text-tratamentos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quidem minus consequuntur vero dolorem rem dignissimos animi, praesentium iste error quod et doloribus, repellat libero voluptate eius quo, est explicabo?
+            </p>
+            <button class="btn btn-back btn-primary">Saiba Mais</button>
+        </div>
+    </div>
 </section>
 @endsection

@@ -45,6 +45,7 @@ header{
     margin: 10px 0;
     padding-left: 10px;
     color: #97c9ff;
+    font-size: 28px;
 }
 .title-2{
     color: white;
@@ -151,6 +152,63 @@ main{
     overflow: hidden;
     -webkit-box-orient: vertical;
 }
+
+/* calendar */
+
+.calendar{
+    width: 350px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-box-calendar{
+    width: 330px;
+    height: 280px;
+    outline: 3px solid #007BFF;
+    border-radius: 7px;
+}
+
+/* tratamentos */
+
+.tratamentos{
+    width: 320px;
+    height: 480px;
+    border-radius: 7px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-tratamentos{
+    width: 300px;
+    height: 460px;
+    outline: 3px solid #007BFF;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.img-tratamentos{
+    width: 280px;
+    height: 200px;
+    border-radius: 7px;
+}
+.text-tratamentos{
+    text-align: center;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
 /* footer page */
 
 footer{
