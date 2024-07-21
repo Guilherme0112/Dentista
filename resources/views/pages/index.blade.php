@@ -48,10 +48,12 @@
 <section class="ex-planos">
     <div class="calendar">
         <div class="c-box-calendar">
-
+            <h2>Vaga mais próxima</h2>
+            <span></span>
         </div>
     </div>
 </section>
+<span class="line"></span>
 <h1 class="title-1">Conheça <span class="title-2">nossos tratamentos</span></h1>
 <section class="ex-planos">
     <div class="tratamentos">
