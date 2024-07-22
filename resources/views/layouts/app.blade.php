@@ -15,9 +15,27 @@
     </header>
     <main>
         @yield('main')
+        <a href="">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" height="50" width="50"           
+            class="icon-wpp">
+        </a>
     </main>
     <footer>
         <span style="color: white">&copyGuiMendS</span>
+        <div class="box-footer">
+            <h5 class="title-footer">Horários</h5>
+            <a href="" class="link-footer">Segunda a Sábado</a>
+            <a href="" class="link-footer">09h às 19h</a>
+            <a href="" class="link-footer">Emergências</a>
+            <a href="" class="link-footer">(00) 0000-0000</a>
+        </div>
+        <div class="box-footer">
+            <h5 class="title-footer">Endereço</h5>
+            <a href="" class="link-footer">Paraíba - Brasil</a>
+            <a href="" class="link-footer">João Pessoa - PB</a>
+            <a href="" class="link-footer">Bairro XXXX</a>
+            <a href="" class="link-footer">Rua XXXX, 000</a>
+        </div>
         <div class="box-footer">
             <h5 class="title-footer">Redes Sociais</h5>
             <a href="" class="link-footer">Instagram</a>
@@ -30,6 +48,7 @@
             <a href="" class="link-footer">Fale Conosco</a>
             <a href="" class="link-footer">Reclame Aqui</a>
             <a href="" class="link-footer">WhatsApp</a>
+            <a href="" class="link-footer">(00) 0000-0000</a>
         </div>
     </footer>
 </body>

@@ -56,14 +56,16 @@
 <span class="line"></span>
 <h1 class="title-1">Conheça <span class="title-2">nossos tratamentos</span></h1>
 <section class="ex-planos">
-    <div class="tratamentos">
-        <div class="c-tratamentos">
-            <img src="../assets/img_1.png" class="img-tratamentos">
-            <p class="text-tratamentos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quidem minus consequuntur vero dolorem rem dignissimos animi, praesentium iste error quod et doloribus, repellat libero voluptate eius quo, est explicabo?
-            </p>
-            <button class="btn btn-back btn-primary">Saiba Mais</button>
+    @foreach($tratamentos as $tratamento)
+        <div class="tratamentos">
+            <div class="c-tratamentos">
+                <img src="{{ $tratamento->photo }}" class="img-tratamentos">
+                <p class="text-tratamentos">
+                    {{ $tratamento->descricao }}
+                </p>
+                <button class="btn btn-back btn-primary">Saiba Mais</button>
+            </div>
         </div>
-    </div>
+        @endforeach
 </section>
 @endsection

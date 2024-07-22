@@ -19,7 +19,7 @@
 
 @section('main')
 <section class="filtro">
-    <button class="btn btn-back btn-success">Plano Personalizado</button>
+
 </section>
 <span class="line"></span>
 <section class="ex-planos">

@@ -1,0 +1,22 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: white;
+    max-width: 600px;
+    text-align: center;
+}
+h2{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.text{
+    padding: 50px 10px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

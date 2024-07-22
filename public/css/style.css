@@ -80,7 +80,8 @@ main{
     width: 350px;
 }
 .div-btn{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .title-text{
     text-align: center;
@@ -170,6 +171,9 @@ main{
     height: 280px;
     outline: 3px solid #007BFF;
     border-radius: 7px;
+    text-align: center;
+    color: #007BFF;
+    padding: 10px;
 }
 
 /* tratamentos */
@@ -201,8 +205,8 @@ main{
     border-radius: 7px;
 }
 .text-tratamentos{
-    text-align: center;
-
+    text-align: center;    
+    font-size: 15px;
     display: -webkit-box;
     -webkit-line-clamp: 8;
     overflow: hidden;
@@ -233,3 +237,14 @@ footer{
 .link-footer:hover{
     color: rgba(255, 255, 255, 0.6);
 }
+
+.icon-wpp{
+    position: fixed;
+    right: 10px;
+    bottom: 150px;
+    z-index: 100;
+    transition: .3s;
+ }
+ .icon-wpp:hover{
+    transform: scale(1.04);
+ }
