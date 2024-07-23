@@ -62,7 +62,7 @@ main{
     width: 100%;
 }
 .background{
-    aspect-ratio: 16/7;
+    aspect-ratio: 16/8;
     width: 100%;
     background: url("../assets/img_1.png");
     background-position: center;
@@ -134,19 +134,12 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-.img-planos{
-
-    object-fit: cover;
-    object-position: center;
-    width: 280px;
-    height: 150px;
-    border-radius: 7px;
-    
-}
+}k
 .desc-planos{
+    width: 100%;
+    padding: 0 20px;
     height: 192px;
-    text-align: center;
+    flex-wrap: wrap;
 
     display: -webkit-box;
     -webkit-line-clamp: 8;
@@ -180,7 +173,7 @@ main{
 
 .tratamentos{
     width: 320px;
-    height: 480px;
+    height: 520px;
     border-radius: 7px;
     background-color: white;
 
@@ -190,7 +183,7 @@ main{
 }
 .c-tratamentos{
     width: 300px;
-    height: 460px;
+    height: 500px;
     outline: 3px solid #007BFF;
     border-radius: 7px;
 

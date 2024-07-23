@@ -33,13 +33,17 @@
     <h1 class="title-1">Veja sobre <span class="title-2">nossos planos</span></h1>
 </div>
 <section class="ex-planos">
-    <div class="box-planos">
-        <div class="c-box-planos">
-            <img src="../assets/img_1.png" alt="" class="img-planos">
-            <span class="desc-planos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum, laborum assumenda, ad quod ipsum ullam modi amet reiciendis, autem ab id beatae necessitatibus earum quo! Incidunt quam non dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nostrum quis minima eius quia architecto, sequi assumenda iure ipsa velit, quae consectetur alias eos consequuntur itaque a neque ipsam delectus!</span>
-            <button class="btn btn-back btn-primary">R$99,99/Mês</button>
+    @foreach($planos as $plano)
+        <div class="box-planos">
+            <div class="c-box-planos">
+                <span class="desc-planos">
+                    <h3 class="text-center">{{ $plano->plano }}</h3>
+                    {{ $plano->descricao }}      
+                </span>
+                <button class="btn btn-back btn-primary">R${{ $plano->precoformatado }}/{{ $plano->assinatura }}</button>
+            </div>
         </div>
-    </div>
+    @endforeach
 </section>
 <span class="line"></span>
 <div>
@@ -60,6 +64,7 @@
         <div class="tratamentos">
             <div class="c-tratamentos">
                 <img src="{{ $tratamento->photo }}" class="img-tratamentos">
+                <h4 class="text-center">{{ $tratamento->title }}</h4>
                 <p class="text-tratamentos">
                     {{ $tratamento->descricao }}
                 </p>

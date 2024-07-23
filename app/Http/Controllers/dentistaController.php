@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\plano;
 use App\Models\tratamento;
 use Illuminate\Http\Request;
 
@@ -8,7 +10,13 @@ class dentistaController extends Controller
 {
     public function index(){
         $tratamentos = tratamento::all();
-        return view('pages.index', ['tratamentos'=>$tratamentos]);
+        $planos = plano::all();
+        // formata o preco, colocando a vírgula
+        $planos->transform(function($plano){
+            $plano->precoformatado = number_format($plano->valor, 2, ',', '.');
+            return $plano;
+        });
+        return view('pages.index', ['tratamentos'=>$tratamentos], ['planos'=>$planos]);
     }
     public function sobre(){
         return view('pages.sobre.sobre');
