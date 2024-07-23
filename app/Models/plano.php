@@ -11,6 +11,7 @@ class plano extends Model
     protected $fillable = [
         'id',
         'plano',
+        'foto',
         'descricao',
         'valor',
         'assinatura',

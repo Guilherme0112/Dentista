@@ -36,11 +36,16 @@
     @foreach($planos as $plano)
         <div class="box-planos">
             <div class="c-box-planos">
+                <img src="" alt="" class="img-plano">
+                <h3 class="text-center">{{ $plano->plano }}</h3>
                 <span class="desc-planos">
-                    <h3 class="text-center">{{ $plano->plano }}</h3>
                     {{ $plano->descricao }}      
                 </span>
-                <button class="btn btn-back btn-primary">R${{ $plano->precoformatado }}/{{ $plano->assinatura }}</button>
+                <button class="btn btn-back btn-primary">R${{ $plano->precoFormatado }}/{{ $plano->assinatura }}</button>
+                <span class="line-box"></span>
+                <a href="">
+                    <button class="btn btn-back btn-success">Entrar em Contato</button>
+                </a>
             </div>
         </div>
     @endforeach

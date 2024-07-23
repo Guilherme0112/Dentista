@@ -13,7 +13,7 @@ class dentistaController extends Controller
         $planos = plano::all();
         // formata o preco, colocando a vírgula
         $planos->transform(function($plano){
-            $plano->precoformatado = number_format($plano->valor, 2, ',', '.');
+            $plano->precoFormatado = number_format($plano->valor, 2, ',', '.');
             return $plano;
         });
         return view('pages.index', ['tratamentos'=>$tratamentos], ['planos'=>$planos]);
@@ -22,6 +22,11 @@ class dentistaController extends Controller
         return view('pages.sobre.sobre');
     }
     public function planos(){
-        return view('pages.planos.planos');
+        $planos = plano::all();
+        $planos->transform(function($plano){
+            $plano->precoFormatado = number_format($plano->valor, 2, ',', '.');
+            return $plano;
+        });
+        return view('pages.planos.planos', ['planos'=>$planos]);
     }
 }

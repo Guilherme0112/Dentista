@@ -10,3 +10,16 @@ main{
     display: flex;
     align-items: center;
 }
+.box-personalizar-plano{
+    width: 450px;
+    height: 350px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px 10px;
+    color: #007BFF;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}

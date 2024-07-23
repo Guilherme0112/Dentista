@@ -52,11 +52,14 @@ header{
 }
 
 /* Primary part of page */
+
 .line{
     display: flex;
     width: 100%;
-    outline: 1px solid rgba(255, 255, 255, 0.2);
+    height: 1px;
+    background-color: white;
     margin: 5px 0;
+    border-radius: 50%;
 }
 main{
     width: 100%;
@@ -110,14 +113,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px;
 }
 .box-planos{
 
     width: 310px;
-    height: 500px;
+    height: 600px;
     border-radius: 7px;
     background-color: white;
+    margin: 10px;
 
     display: flex;
     justify-content: center;
@@ -125,26 +130,41 @@ main{
 }
 .c-box-planos{
     width: 290px;
-    height: 480px;
+    height: 580px;
     outline: 3px solid #007BFF;
     border-radius: 7px;
     padding: 5px;
+    color: #007BFF;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}k
+}
 .desc-planos{
     width: 100%;
     padding: 0 20px;
-    height: 192px;
     flex-wrap: wrap;
+    text-align: center;
+    color: #007BFF;
 
     display: -webkit-box;
     -webkit-line-clamp: 8;
     overflow: hidden;
     -webkit-box-orient: vertical;
+}
+.img-plano{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(164, 126, 36);
+    margin-bottom: 5px;
+}
+.line-box{
+    height: 1px;
+    width: 90%;
+    background-color: #007BFF;
+    border-radius: 50%;
 }
 
 /* calendar */
@@ -173,9 +193,10 @@ main{
 
 .tratamentos{
     width: 320px;
-    height: 520px;
+    height: 550px;
     border-radius: 7px;
     background-color: white;
+    margin: 10px;
 
     display: flex;
     align-items: center;
@@ -183,7 +204,7 @@ main{
 }
 .c-tratamentos{
     width: 300px;
-    height: 500px;
+    height: 530px;
     outline: 3px solid #007BFF;
     border-radius: 7px;
 
@@ -196,12 +217,15 @@ main{
     width: 280px;
     height: 200px;
     border-radius: 7px;
+
+    object-fit: cover;
+    object-position: center;
 }
 .text-tratamentos{
     text-align: center;    
     font-size: 15px;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 9;
     overflow: hidden;
     -webkit-box-orient: vertical;
 }
@@ -238,6 +262,9 @@ footer{
     z-index: 100;
     transition: .3s;
  }
+
+/* Icone whatsapp na lateral do site */
+
  .icon-wpp:hover{
     transform: scale(1.04);
  }
