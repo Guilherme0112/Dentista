@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Sobre Nos')
+@section('title', 'Sobre nós')
 
 @section('links')
 <link rel="stylesheet" href="../css/style.css">

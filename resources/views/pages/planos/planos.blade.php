@@ -21,11 +21,14 @@
 <div class="w-100 p-3">
     <h1 class="title-1">Escolha seu <span class="title-2">plano dentário</span></h1>
 </div>
+
+<!-- Planos -->
+
 <section class="ex-planos">
     @foreach($planos as $plano)
     <div class="box-planos">
         <div class="c-box-planos">
-            <img src="" alt="" class="img-plano">
+            <img src="{{ $plano->foto }}" alt="" class="img-plano">
             <h3 class="text-center">{{ $plano->plano }}</h3>
             <span class="desc-planos">
                 {{ $plano->descricao }}
@@ -39,6 +42,9 @@
     </div>
     @endforeach
 </section>
+
+<!-- Plano Personalizado -->
+
 <span class="line"></span>
 <div class="w-100 p-3">
     <h1 class="title-1">ou crie seu <span class="title-2">plano dentário</span></h1>
@@ -54,6 +60,9 @@
         </a>
     </div>
 </section>
+
+<!-- Perguntas feitas com frequência -->
+
 <span class="line"></span>
 <div class="w-100 p-3">
     <h1 class="title-1">Perguntas feitas <span class="title-2">com frequência</span></h1>

@@ -10,9 +10,15 @@
     <title>@yield('title')</title>
 </head>
 <body class="bg-primary bg-gradient">
+
+    <!-- header do site -->
+
     <header>
         @yield('header')
     </header>
+
+    <!-- parte principal do site -->
+
     <main>
         @yield('main')
         <a href="">
@@ -20,6 +26,10 @@
             class="icon-wpp">
         </a>
     </main>
+
+    <!-- rodapé do site -->
+
+    <span class="line"></span>
     <footer>
         <span style="color: white">&copyGuiMendS</span>
         <div class="box-footer">

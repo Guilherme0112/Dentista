@@ -1,0 +1,41 @@
+header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.box{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-contato{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: white;
+    margin: 50px 10px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-contato p, h5, h4{
+    color: #007BFF;
+    text-align: center;
+}
+.box-contato a{
+    width: 100%;
+}
+.box-contato a:hover{
+    text-decoration: none;
+}
+.box-contato button{
+    width: 100%;
+}
+svg, path{
+    color: #007BFF;
+}

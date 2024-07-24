@@ -31,4 +31,7 @@ class dentistaController extends Controller
         });
         return view('pages.planos.planos', ['planos'=>$planos], ['perguntas'=>$perguntas]);
     }
+    public function contato(){
+        return view('pages.contato.contato');
+    }
 }
