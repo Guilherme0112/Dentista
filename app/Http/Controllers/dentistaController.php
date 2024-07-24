@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\pergunta;
 use App\Models\plano;
 use App\Models\tratamento;
 use Illuminate\Http\Request;
@@ -23,10 +24,11 @@ class dentistaController extends Controller
     }
     public function planos(){
         $planos = plano::all();
+        $perguntas = pergunta::all();
         $planos->transform(function($plano){
             $plano->precoFormatado = number_format($plano->valor, 2, ',', '.');
             return $plano;
         });
-        return view('pages.planos.planos', ['planos'=>$planos]);
+        return view('pages.planos.planos', ['planos'=>$planos], ['perguntas'=>$perguntas]);
     }
 }

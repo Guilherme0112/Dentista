@@ -32,7 +32,7 @@
             </span>
             <button class="btn btn-back btn-primary">R${{ $plano->precoFormatado }}/{{ $plano->assinatura }}</button>
             <span class="line-box"></span>
-            <a href="">
+            <a href="" class="text-decoration-none">
                 <button class="btn btn-back btn-success">Entrar em Contato</button>
             </a>
         </div>
@@ -49,7 +49,7 @@
         <p>Você pode criar seu própio plano dentário clicando no botão abaixo, você será redirencionado
             ao WhatsApp da clínica, lá você pode criar seu plano junto a atendente.
         </p>
-        <a href="">
+        <a href="" class="text-decoration-none">
             <button class="btn btn-primary btn-back">Criar Agora</button>
         </a>
     </div>
@@ -58,7 +58,13 @@
 <div class="w-100 p-3">
     <h1 class="title-1">Perguntas feitas <span class="title-2">com frequência</span></h1>
 </div>
-<section>
-
+<section class="ex-planos">
+    @foreach($perguntas as $pergunta)
+    <div class="box-perguntas">
+        <h1 class="box-title-perguntas">{{ $pergunta->title }}</h1>
+        <span class="line-box"></span>
+        <p class="box-resposta-pergunta">{{ $pergunta->resposta }}</p>
+    </div>
+    @endforeach
 </section>
 @endsection
