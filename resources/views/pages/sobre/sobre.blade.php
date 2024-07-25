@@ -10,7 +10,7 @@
 
 @section('header')
 <a href="{{ route('pages-index') }}" class="link-header">Início</a><a href="{{ route('pages-planos') }}" class="link-header">Planos</a>
-<a href="" class="link-header">Contato</a>
+<a href="{{ route('pages-contato') }}" class="link-header">Contato</a>
 <a href="" class="link-header">Login</a>
 <a href="" class="link-header">Registre-se</a>
 @endsection

@@ -1,0 +1,25 @@
+.ex-planos{
+    justify-content: space-around;
+}
+.box-perfil{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 370px;
+    border-radius: 10px;
+}
+.box-perfil-1{
+    width: 100%;
+    border-radius: 7px;
+    background-color: white;
+    color: #007BFF;
+
+    outline: 3px solid #007BFF;
+    padding: 10px;
+    text-align: center;
+}
+.box-perfil a{
+    margin: 0 auto;
+}

@@ -34,4 +34,10 @@ class dentistaController extends Controller
     public function contato(){
         return view('pages.contato.contato');
     }
+
+    // página de perfil
+
+    public function perfil(){
+        return view('pages.perfil.perfil');
+    }
 }

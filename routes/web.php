@@ -9,6 +9,11 @@ Route::prefix('/')->group(function(){
     Route::get('/planos', [dentistaController::class, 'planos'])->name('pages-planos');
     Route::get('/contato', [dentistaController::class, 'contato'])->name('pages-contato');
 });
+
+Route::prefix('/perfil')->group(function(){
+    Route::get('/', [dentistaController::class, 'perfil'])->name('pages-perfil');
+});
+
 Route::fallback(function(){
     return view('pages.404.404');
 });
