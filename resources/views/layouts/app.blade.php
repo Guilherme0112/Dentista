@@ -31,7 +31,6 @@
 
     <span class="line"></span>
     <footer>
-        <span style="color: white">&copyGuiMendS</span>
         <div class="box-footer">
             <h5 class="title-footer">Horários</h5>
             <a href="" class="link-footer">Segunda a Sábado</a>
@@ -60,6 +59,7 @@
             <a href="" class="link-footer">WhatsApp</a>
             <a href="" class="link-footer">(00) 0000-0000</a>
         </div>
+        <span class="text-light w-100 p-3 text-center">&copyGuiMendS</span>
     </footer>
 </body>
 </html>
