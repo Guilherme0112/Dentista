@@ -25,22 +25,30 @@
 <!-- Planos -->
 
 <section class="ex-planos">
-    @foreach($planos as $plano)
-    <div class="box-planos">
-        <div class="c-box-planos">
-            <img src="{{ $plano->foto }}" alt="" class="img-plano">
-            <h3 class="text-center">{{ $plano->plano }}</h3>
-            <span class="desc-planos">
-                {{ $plano->descricao }}
-            </span>
-            <button class="btn btn-back btn-primary">R${{ $plano->precoFormatado }}/{{ $plano->assinatura }}</button>
-            <span class="line-box"></span>
-            <a href="" class="text-decoration-none">
-                <button class="btn btn-back btn-success">Entrar em Contato</button>
-            </a>
+    @if(count($planos) > 0)
+        @foreach($planos as $plano)
+            <div class="box-planos">
+                <div class="c-box-planos">
+                    <img src="{{ $plano->foto }}" alt="" class="img-plano">
+                    <h3 class="text-center">{{ $plano->plano }}</h3>
+                    <span class="desc-planos">
+                        {{ $plano->descricao }}
+                    </span>
+                    <button class="btn btn-back btn-primary">R${{ $plano->precoFormatado }}/{{ $plano->assinatura }}</button>
+                    <span class="line-box"></span>
+                    <a href="" class="text-decoration-none">
+                        <button class="btn btn-back btn-success">Entrar em Contato</button>
+                    </a>
+                </div>
+            </div>
+        @endforeach
+    @else 
+        <div class="msg-not-found">
+            <div class="c-msg-not-found">
+                <h3 class="text-primary">Sem planos disponíveis</h3>
+            </div>
         </div>
-    </div>
-    @endforeach
+    @endif
 </section>
 
 <!-- Plano Personalizado -->
@@ -68,12 +76,20 @@
     <h1 class="title-1">Perguntas feitas <span class="title-2">com frequência</span></h1>
 </div>
 <section class="ex-planos">
-    @foreach($perguntas as $pergunta)
-    <div class="box-perguntas">
-        <h1 class="box-title-perguntas">{{ $pergunta->title }}</h1>
-        <span class="line-box"></span>
-        <p class="box-resposta-pergunta">{{ $pergunta->resposta }}</p>
-    </div>
-    @endforeach
+    @if(count($perguntas) > 0)
+        @foreach($perguntas as $pergunta)
+            <div class="box-perguntas">
+                <h1 class="box-title-perguntas">{{ $pergunta->title }}</h1>
+                <span class="line-box"></span>
+                <p class="box-resposta-pergunta">{{ $pergunta->resposta }}</p>
+            </div>
+        @endforeach
+    @else 
+        <div class="msg-not-found">
+            <div class="c-msg-not-found">
+                <h3 class="text-primary">Não há perguntas frequentes</h3>
+            </div>
+        </div>
+    @endif
 </section>
 @endsection
