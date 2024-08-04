@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('planos', function (Blueprint $table) {
             $table->id();
+            $table->text('foto');
             $table->text('descricao');
-            $table->text('valor');
+            $table->double('valor', 10.2);
             $table->enum('assinatura', ['Mês', 'Ano']);
             $table->timestamps();
         });

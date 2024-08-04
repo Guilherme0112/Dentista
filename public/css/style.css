@@ -40,6 +40,9 @@ header{
 }
 /* config title */
 
+.box-title{
+    width: 100%;
+}
 .title-1{
     margin: 10px 0;
     padding-left: 10px;

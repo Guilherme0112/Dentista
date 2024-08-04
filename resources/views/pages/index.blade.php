@@ -30,7 +30,7 @@
             <a href="{{ route('pages-planos') }}" class="btn btn-primary btn-back">Fazer meu plano</a>
         </div>
     </div>
-    <div>
+    <div class="box-title">
         <h1 class="title-1">Veja sobre <span class="title-2">nossos planos</span></h1>
     </div>
 
@@ -66,7 +66,7 @@
     <!-- Horários -->
 
     <span class="line"></span>
-    <div>
+    <div class="box-title">
         <h1 class="title-1">Marque sua <span class="title-2">consulta conosco</span></h1>
     </div>
     <section class="ex-planos">
@@ -81,14 +81,16 @@
     <!-- Tratamentos -->
 
     <span class="line"></span>
-    <h1 class="title-1">Conheça <span class="title-2">nossos tratamentos</span></h1>
+    <div class="box-title">
+        <h1 class="title-1">Conheça <span class="title-2">nossos tratamentos</span></h1>
+    </div>
     <section class="ex-planos">
         @if(count($tratamentos) > 0)
             @foreach($tratamentos as $tratamento)
                 <div class="tratamentos">
                     <div class="c-tratamentos">
                         <img src="{{ $tratamento->photo }}" class="img-tratamentos">
-                        <h4 class="text-center">{{ $tratamento->title }}</h4>
+                        <h4 class="text-center">{{ $tratamento->titulo }}</h4>
                         <p class="text-tratamentos">
                             {{ $tratamento->descricao }}
                         </p>
@@ -108,7 +110,9 @@
     <!-- Informacoes sobre a clínica -->
 
     <span class="line"></span>
-    <h1 class="title-1">Veja mais <span class="title-2">sobre nós</span></h1>
+    <div class="box-title">
+        <h1 class="title-1">Veja mais <span class="title-2">sobre nós</span></h1>
+    </div>
     <section class="ex-planos bg-white info mb-5">
         <div class="box-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
@@ -133,8 +137,9 @@
     </section>
 
     <!-- Localizaçao da clínica -->
-
-    <h1 class="title-1">Encontre nossa <span class="title-2">clínica</span></h1>
+    <div class="box-title">
+        <h1 class="title-1">Encontre nossa <span class="title-2">clínica</span></h1>
+    </div>
     <section class="ex-planos">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15834.609520978978!2d-34.89551885!3d-7.1661236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace9ad661b549f%3A0x7e6b4ccd0e17422!2sBeMais%20Supermercados%20-%20Oitizeiro!5e0!3m2!1spt-BR!2sbr!4v1721836421903!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
     </section>

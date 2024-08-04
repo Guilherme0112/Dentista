@@ -10,7 +10,7 @@ class tratamento extends Model
     use HasFactory;
     protected $fillable = [
         'id',
-        'title',
+        'titulo',
         'photo',
         'descricao',
         'created_at',
